@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>拾味餐馆 | 当季风味餐厅</title>
+    <meta
+      name="description"
+      content="拾味餐馆首页，提供当季菜单、订位入口、营业信息和餐厅氛围展示。"
+    />
+    <link rel="preload" href="./assets/restaurant-hero.png" as="image" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header" data-header>
+        <a class="brand" href="#home" aria-label="拾味餐馆首页">
+          <span class="brand-mark">拾</span>
+          <span>拾味餐馆</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#menu">菜单</a>
+          <a href="#experience">空间</a>
+          <a href="#hours">营业</a>
+          <a href="#reserve">订位</a>
+        </nav>
+        <a class="header-action" href="#reserve">立即订位</a>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-label="拾味餐馆介绍">
+          <img
+            class="hero-image"
+            src="./assets/restaurant-hero.png"
+            alt="温暖灯光下的现代餐馆开放式厨房与当季菜品"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow">当季餐桌 · 城市小馆</p>
+            <h1>用一顿认真做的晚餐，留住今天的好胃口。</h1>
+            <p class="hero-copy">
+              拾味餐馆每日采购新鲜食材，以开放式厨房呈现炙烤、慢炖与手作甜点。适合约会、好友小聚，也适合给自己一顿从容的晚餐。
+            </p>
+            <div class="hero-actions" aria-label="首页主要操作">
+              <a class="button primary" href="#reserve">预订餐位</a>
+              <a class="button secondary" href="#menu">查看菜单</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-strip" aria-label="餐厅亮点">
+          <div>
+            <span>人均</span>
+            <strong>¥168</strong>
+          </div>
+          <div>
+            <span>晚餐时段</span>
+            <strong>17:30-22:30</strong>
+          </div>
+          <div>
+            <span>招牌</span>
+            <strong>炙烤牛排与海鲜</strong>
+          </div>
+          <div>
+            <span>地址</span>
+            <strong>梧桐路 18 号</strong>
+          </div>
+        </section>
+
+        <section class="section menu-section" id="menu">
+          <div class="section-heading">
+            <p class="eyebrow">今日推荐</p>
+            <h2>从开胃菜到甜点，菜单每天跟着季节微调。</h2>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <p>前菜</p>
+              <h3>柑橘油醋章鱼沙拉</h3>
+              <span>炙烤章鱼、芝麻菜、血橙、榛子碎</span>
+              <strong>¥68</strong>
+            </article>
+            <article class="menu-card featured">
+              <p>主菜</p>
+              <h3>迷迭香炭烤西冷</h3>
+              <span>谷饲牛排、烤蒜土豆泥、黑椒汁</span>
+              <strong>¥198</strong>
+            </article>
+            <article class="menu-card">
+              <p>海鲜</p>
+              <h3>番茄藏红花海鲜锅</h3>
+              <span>鲜虾、青口、鳕鱼、酸面包</span>
+              <strong>¥158</strong>
+            </article>
+            <article class="menu-card">
+              <p>甜点</p>
+              <h3>焦糖海盐布丁</h3>
+              <span>马达加斯加香草、烤杏仁、海盐焦糖</span>
+              <strong>¥42</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="experience" id="experience">
+          <div class="experience-copy">
+            <p class="eyebrow">空间体验</p>
+            <h2>像回到熟悉的小餐桌，安心吃一顿热乎饭。</h2>
+            <p>
+              拾味想把晚餐变成一天里柔软的片刻。灯光不刺眼，座位不拥挤，热菜从厨房端出来时，刚好适合和重要的人慢慢说话。
+            </p>
+          </div>
+          <div class="experience-list" aria-label="服务特点">
+            <div>
+              <span>01</span>
+              <strong>暖暖的主厨台</strong>
+              <p>木质餐桌、柔和灯光和厨房里飘来的香气，让人一坐下就慢慢放松下来。</p>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>留给两个人的窗边</strong>
+              <p>适合约会、纪念日，也适合没有特别理由的晚餐，把今天的琐碎轻轻放一边。</p>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>给朋友团聚的长桌</strong>
+              <p>生日、家庭聚餐或好友小聚都能坐得舒服，菜一道道上来，话也一句句热起来。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation-band" id="reserve">
+          <div>
+            <p class="eyebrow">订位</p>
+            <h2>今晚留一个好位置。</h2>
+          </div>
+          <form class="reservation-form" aria-label="订位表单">
+            <label>
+              <span>日期</span>
+              <input type="date" required />
+            </label>
+            <label>
+              <span>人数</span>
+              <select required>
+                <option>2 位</option>
+                <option>3-4 位</option>
+                <option>5-8 位</option>
+                <option>包场咨询</option>
+              </select>
+            </label>
+            <label>
+              <span>电话</span>
+              <input type="tel" placeholder="请输入手机号" required />
+            </label>
+            <button type="submit">提交订位</button>
+          </form>
+        </section>
+
+        <section class="hours" id="hours" aria-label="营业信息">
+          <div>
+            <p class="eyebrow">营业时间</p>
+            <h2>周二至周日开放，周一店休。</h2>
+          </div>
+          <dl>
+            <div>
+              <dt>午餐</dt>
+              <dd>11:30-14:30</dd>
+            </div>
+            <div>
+              <dt>晚餐</dt>
+              <dd>17:30-22:30</dd>
+            </div>
+            <div>
+              <dt>电话</dt>
+              <dd>021-8800-1818</dd>
+            </div>
+          </dl>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>拾味餐馆</span>
+        <span>梧桐路 18 号 · 021-8800-1818</span>
+      </footer>
+    </div>
+
+    <script type="text/x-template" id="vue-app-template">
+      <header class="site-header" :class="{ 'is-scrolled': isScrolled }">
+        <a class="brand" href="#home" aria-label="拾味餐馆首页">
+          <span class="brand-mark">拾</span>
+          <span>拾味餐馆</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#menu">菜单</a>
+          <a href="#experience">空间</a>
+          <a href="#hours">营业</a>
+          <a href="#reserve">订位</a>
+        </nav>
+        <a class="header-action" href="#reserve">立即订位</a>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-label="拾味餐馆介绍">
+          <img class="hero-image" src="./assets/restaurant-hero.png" alt="温暖灯光下的现代餐馆开放式厨房与当季菜品" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow">当季餐桌 · 城市小馆</p>
+            <h1>用一顿认真做的晚餐，留住今天的好胃口。</h1>
+            <p class="hero-copy">拾味餐馆每日采购新鲜食材，以开放式厨房呈现炙烤、慢炖与手作甜点。适合约会、好友小聚，也适合给自己一顿从容的晚餐。</p>
+            <div class="hero-actions" aria-label="首页主要操作">
+              <a class="button primary" href="#reserve">预订餐位</a>
+              <a class="button secondary" href="#menu">查看菜单</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-strip" aria-label="餐厅亮点">
+          <div v-for="item in highlights" :key="item.label">
+            <span>{{ item.label }}</span>
+            <strong>{{ item.value }}</strong>
+          </div>
+        </section>
+
+        <section class="section menu-section" id="menu">
+          <div class="section-heading">
+            <p class="eyebrow">今日推荐</p>
+            <h2>从开胃菜到甜点，菜单每天跟着季节微调。</h2>
+          </div>
+          <div class="menu-grid">
+            <article v-for="item in menuItems" :key="item.name" class="menu-card" :class="{ featured: item.featured }">
+              <p>{{ item.category }}</p>
+              <h3>{{ item.name }}</h3>
+              <span>{{ item.description }}</span>
+              <strong>{{ item.price }}</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="experience" id="experience">
+          <div class="experience-copy">
+            <p class="eyebrow">空间体验</p>
+            <h2>像回到熟悉的小餐桌，安心吃一顿热乎饭。</h2>
+            <p>拾味想把晚餐变成一天里柔软的片刻。灯光不刺眼，座位不拥挤，热菜从厨房端出来时，刚好适合和重要的人慢慢说话。</p>
+          </div>
+          <div class="experience-list" aria-label="服务特点">
+            <div v-for="feature in features" :key="feature.number">
+              <span>{{ feature.number }}</span>
+              <strong>{{ feature.title }}</strong>
+              <p>{{ feature.text }}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation-band" id="reserve">
+          <div>
+            <p class="eyebrow">订位</p>
+            <h2>今晚留一个好位置。</h2>
+          </div>
+          <form class="reservation-form" aria-label="订位表单" @submit.prevent="submitReservation">
+            <label>
+              <span>日期</span>
+              <input v-model="form.date" type="date" required />
+            </label>
+            <label>
+              <span>人数</span>
+              <select v-model="form.partySize" required>
+                <option>2 位</option>
+                <option>3-4 位</option>
+                <option>5-8 位</option>
+                <option>包场咨询</option>
+              </select>
+            </label>
+            <label>
+              <span>电话</span>
+              <input v-model="form.phone" type="tel" placeholder="请输入手机号" required />
+            </label>
+            <button type="submit" :disabled="isSubmitted">{{ isSubmitted ? "已收到订位" : "提交订位" }}</button>
+          </form>
+        </section>
+
+        <section class="hours" id="hours" aria-label="营业信息">
+          <div>
+            <p class="eyebrow">营业时间</p>
+            <h2>周二至周日开放，周一店休。</h2>
+          </div>
+          <dl>
+            <div>
+              <dt>午餐</dt>
+              <dd>11:30-14:30</dd>
+            </div>
+            <div>
+              <dt>晚餐</dt>
+              <dd>17:30-22:30</dd>
+            </div>
+            <div>
+              <dt>电话</dt>
+              <dd>021-8800-1818</dd>
+            </div>
+          </dl>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>拾味餐馆</span>
+        <span>梧桐路 18 号 · 021-8800-1818</span>
+      </footer>
+    </script>
+    <script>
+      const fallbackHeader = document.querySelector("[data-header]");
+      const fallbackForm = document.querySelector(".reservation-form");
+
+      function setupPlainInteractions() {
+        const updateHeader = () => {
+          fallbackHeader?.classList.toggle("is-scrolled", window.scrollY > 24);
+        };
+
+        updateHeader();
+        window.addEventListener("scroll", updateHeader, { passive: true });
+
+        fallbackForm?.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const button = fallbackForm.querySelector("button");
+          button.textContent = "已收到订位";
+          button.disabled = true;
+
+          window.setTimeout(() => {
+            button.textContent = "提交订位";
+            button.disabled = false;
+            fallbackForm.reset();
+          }, 2200);
+        });
+      }
+
+      function mountCdnVue() {
+        if (!window.Vue) {
+          setupPlainInteractions();
+          return;
+        }
+
+        const { createApp } = window.Vue;
+
+        createApp({
+          template: "#vue-app-template",
+          data() {
+            return {
+              isScrolled: false,
+              isSubmitted: false,
+              form: {
+                date: "",
+                partySize: "2 位",
+                phone: "",
+              },
+              highlights: [
+                { label: "人均", value: "¥168" },
+                { label: "晚餐时段", value: "17:30-22:30" },
+                { label: "招牌", value: "炙烤牛排与海鲜" },
+                { label: "地址", value: "梧桐路 18 号" },
+              ],
+              menuItems: [
+                {
+                  category: "前菜",
+                  name: "柑橘油醋章鱼沙拉",
+                  description: "炙烤章鱼、芝麻菜、血橙、榛子碎",
+                  price: "¥68",
+                },
+                {
+                  category: "主菜",
+                  name: "迷迭香炭烤西冷",
+                  description: "谷饲牛排、烤蒜土豆泥、黑椒汁",
+                  price: "¥198",
+                  featured: true,
+                },
+                {
+                  category: "海鲜",
+                  name: "番茄藏红花海鲜锅",
+                  description: "鲜虾、青口、鳕鱼、酸面包",
+                  price: "¥158",
+                },
+                {
+                  category: "甜点",
+                  name: "焦糖海盐布丁",
+                  description: "马达加斯加香草、烤杏仁、海盐焦糖",
+                  price: "¥42",
+                },
+              ],
+              features: [
+                {
+                  number: "01",
+                  title: "暖暖的主厨台",
+                  text: "木质餐桌、柔和灯光和厨房里飘来的香气，让人一坐下就慢慢放松下来。",
+                },
+                {
+                  number: "02",
+                  title: "留给两个人的窗边",
+                  text: "适合约会、纪念日，也适合没有特别理由的晚餐，把今天的琐碎轻轻放一边。",
+                },
+                {
+                  number: "03",
+                  title: "给朋友团聚的长桌",
+                  text: "生日、家庭聚餐或好友小聚都能坐得舒服，菜一道道上来，话也一句句热起来。",
+                },
+              ],
+            };
+          },
+          mounted() {
+            this.updateHeader();
+            window.addEventListener("scroll", this.updateHeader, { passive: true });
+          },
+          beforeUnmount() {
+            window.removeEventListener("scroll", this.updateHeader);
+          },
+          methods: {
+            updateHeader() {
+              this.isScrolled = window.scrollY > 24;
+            },
+            submitReservation() {
+              this.isSubmitted = true;
+
+              window.setTimeout(() => {
+                this.isSubmitted = false;
+                this.form.date = "";
+                this.form.partySize = "2 位";
+                this.form.phone = "";
+              }, 2200);
+            },
+          },
+        }).mount("#app");
+      }
+
+      if (window.location.protocol === "file:") {
+        const vueScript = document.createElement("script");
+        vueScript.src = "https://unpkg.com/vue@3/dist/vue.global.prod.js";
+        vueScript.onload = mountCdnVue;
+        vueScript.onerror = setupPlainInteractions;
+        document.body.append(vueScript);
+      } else {
+        const viteScript = document.createElement("script");
+        viteScript.type = "module";
+        viteScript.src = "/src/main.js";
+        document.body.append(viteScript);
+      }
+    </script>
+  </body>
+</html>
